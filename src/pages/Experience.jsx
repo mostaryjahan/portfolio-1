@@ -21,7 +21,7 @@ const skills = [
   
     return (
      
-        <section className="my-10 font-mon lg:mb-0 mb-44  px-4">
+        <section className="my-10 dark:text-gray-200 font-mon lg:mb-0  px-2">
           <p className="text-center font-mon text-gray-600 text-xl dark:text-white">Explore my</p>
           <h1 className="text-center font-mon font-bold md:text-4xl text-3xl dark:text-white">Experience</h1>
           <div className="flex flex-col md:flex-row justify-center mt-8 space-y-8 md:space-y-0 md:space-x-12">

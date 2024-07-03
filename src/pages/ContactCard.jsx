@@ -1,5 +1,7 @@
 import emailjs from 'emailjs-com';
 import { useState } from 'react';
+import Swal from 'sweetalert2';
+
 
 const ContactCard = () => {
   const [formData, setFormData] = useState({
@@ -32,7 +34,13 @@ const ContactCard = () => {
     )
     .then((result) => {
       console.log(result.text);
-      alert('Email sent successfully!');
+      Swal.fire({
+        icon: 'success',
+        title: 'Success!',
+        text: 'Your email has been sent successfully.',
+        timer: 3000,
+        timerProgressBar: true, 
+      });
       setFormData({ name: '', from_name: '', subject: '', email: '', message: '' });
     }, (error) => {
       console.log(error.text);
@@ -41,12 +49,16 @@ const ContactCard = () => {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen bg-gray-100">
-      <div className="bg-gray-200 p-6 rounded-md shadow-md w-96">
-        <h2 className="text-2xl font-bold mb-4 text-center">Get In Touch</h2>
+    <div className=''> 
+    <div className="flex justify-center items-center lg:mt-8 lg:mb-4 mb-40 h-screen ">
+      
+      <div className=" font-mon p-6 rounded-md shadow-md w-1/2 border-2">
+        <h2 className="text-2xl font-mon font-bold mb-4 text-center">Get In Touch</h2>
         <form className="space-y-4" onSubmit={handleSubmit}>
-          <div>
-            <label htmlFor="name" className="block text-gray-700">Name</label>
+
+            <div className='flex gap-2'>
+            <div className='w-full'>
+            <label htmlFor="name" className="block text-gray-700">Name: </label>
             <input
               type="text"
               id="name"
@@ -57,8 +69,8 @@ const ContactCard = () => {
               onChange={handleChange}
             />
           </div>
-          <div>
-            <label htmlFor="subject" className="block text-gray-700">Subject</label>
+          <div className='w-full'>
+            <label htmlFor="subject" className="block text-gray-700">Subject: </label>
             <input
               type="text"
               id="subject"
@@ -69,8 +81,10 @@ const ContactCard = () => {
               onChange={handleChange}
             />
           </div>
+            </div>
+        
           <div>
-            <label htmlFor="email" className="block text-gray-700">Email</label>
+            <label htmlFor="email" className="block text-gray-700">Email: </label>
             <input
               type="email"
               id="email"
@@ -82,7 +96,7 @@ const ContactCard = () => {
             />
           </div>
           <div>
-            <label htmlFor="message" className="block text-gray-700">Message</label>
+            <label htmlFor="message" className="block text-gray-700">Message: </label>
             <textarea
               id="message"
               name="message"
@@ -101,6 +115,7 @@ const ContactCard = () => {
           </button>
         </form>
       </div>
+    </div>
     </div>
   );
 };

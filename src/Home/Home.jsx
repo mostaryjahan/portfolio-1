@@ -11,9 +11,9 @@ const Home = () => {
         <div className=" mx-auto max-w-7xl md:p-0 p-2">
             <Nav></Nav>
             <Banners></Banners>
-            <Experience></Experience>
-            <Project></Project>
             <About></About> 
+            <Project></Project>
+            <Experience></Experience>      
             <ContactCard></ContactCard>
             <Footer></Footer>
            

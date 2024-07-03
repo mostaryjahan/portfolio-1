@@ -1,26 +1,31 @@
+import { MdSupervisedUserCircle } from "react-icons/md";
 const About = () => {
   return (
-    <div className="mb-10 mt-10">
-      <h1 className="text-center font-mon font-bold text-5xl dark:text-white">
-        About Me
-      </h1>
-
-      <div className="md:grid grid-cols-2 mt-8 gap-4 md:space-y-0 space-y-4">
-        <div className="border-2 rounded-2xl p-4">
-            <p className="font-mon dark:text-white text-3xl font-bold">More about me: </p>
-          <p className="font-mon mt-4">
-            I am a dedicated frontend web developer with a passion for creating
-            dynamic and responsive web applications. My expertise lies in using
-            modern frameworks like React to build user-friendly interfaces that
-            provide a seamless user experience. I take pride in writing clean,
+    <div className="flex flex-col items-center  mt-10 font-mon">
+      <p className=" md:text-xl text-gray-600 font-mon"> To Know More</p>
+      <h1 className="md:text-5xl text-3xl font-mon font-bold mb-6">About Me</h1>
+      <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+       
+        <div className="border-2 md:px-20 py-3 px-6 rounded-md">
+          <p className="mt-4 font-mon md:text-left max-w-2xl ">
+                      I am a dedicated frontend web developer with a passion for creating
+           dynamic and responsive web applications. My expertise lies in using
+             modern frameworks like React to build user-friendly interfaces that
+             provide a seamless user experience. I take pride in writing clean,
             efficient code and continuously learning new technologies to enhance
-            my skill set. With a keen eye for design and attention to detail, I
-            strive to bridge the gap between design and technology, bringing
-            creative ideas to life on the web.
+            my skill set. Thank you for visiting.
           </p>
         </div>
-        <div className="border-2 rounded-2xl p-4">
-            <h3 className="font-pop text-3xl font-bold">Education</h3>
+
+        <div className="flex">
+          <div className="text-center md:text-left py-6 px-6 border-2 md:py-10 md:px-20 rounded-md">
+            <MdSupervisedUserCircle className="text-3xl mx-auto md:mx-0" />
+            <h2 className="md:text-3xl text-2xl font-bold">Education</h2>
+            <p className=" md:text-lg">
+             (2019-20) - B.Sc. - Bachelor of Science
+            </p>
+            <p className=" md:text-lg">2019 - H.S.C - Higher Secondary Certificate</p>
+          </div>
         </div>
       </div>
     </div>
@@ -28,3 +33,5 @@ const About = () => {
 };
 
 export default About;
+
+

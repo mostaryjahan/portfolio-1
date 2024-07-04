@@ -14,8 +14,11 @@ const Nav = () => {
 
 
   const handleNavClick = (id) => {
-    navigate(`#${id}`);
+    // navigate(`#${id}`);
+    navigate("/", { replace: true });
     smoothScroll(id); 
+   
+
   };
 
    
@@ -25,6 +28,7 @@ const Nav = () => {
       <li className="font-medium text-lg font-mon ">
         <a onClick={() => handleNavClick("about")}>About</a>
       </li>
+     
       <li className="font-medium text-lg font-mon ">
         <a onClick={() => handleNavClick("experience")}>Experience</a>
       </li>

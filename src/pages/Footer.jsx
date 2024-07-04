@@ -15,7 +15,9 @@ const Footer = () => {
 
 
   const handleNavClick = (id) => {
-    navigate(`#${id}`);
+    // navigate(`#${id}`);
+    navigate("/", { replace: true });
+
     smoothScroll(id); 
   };
 

@@ -1,5 +1,4 @@
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
-import Nav from "../pages/Nav";
 import { useEffect } from "react";
 import Footer from "../pages/Footer";
 
@@ -7,8 +6,10 @@ const Main = () => {
     const location = useLocation();
     const navigate = useNavigate();
 
+  
+
     useEffect(() => {
-        navigate("#nav", { replace: true });
+        navigate("#home", { replace: true });
       }, [navigate]);
 
 
@@ -23,9 +24,9 @@ const Main = () => {
   }, [location]);
 
     return (
-        <div >
+        <div className="">
             <div className="mx-auto max-w-7xl">
-            <Nav></Nav>
+            {/* <Nav></Nav> */}
             <Outlet></Outlet>
             </div>
             <div>

@@ -50,7 +50,7 @@ const ContactCard = () => {
 
   return (
     <div id='contact' className=''> 
-      <div className="flex justify-center items-center   dark:text-gray-200 w-full mb-4">
+      <div className="flex justify-center items-center   dark:text-gray-200 w-full mb-8 px-2">
         <div className="font-mon p-4 rounded-md shadow-md w-full sm:w-3/4 border-2 ">
           <h2 className="text-2xl font-mon font-bold mb-4 text-center">Get In Touch</h2>
           <form className="space-y-4 " onSubmit={handleSubmit}>
@@ -106,7 +106,7 @@ const ContactCard = () => {
             </div>
             <button
               type="submit"
-              className="w-full dark:bg-slate-400 dark:text-black py-2 px-4 bg-black text-white font-bold rounded-md hover:bg-gray-800"
+              className="w-full dark:bg-slate-400 dark:text-black py-2 px-4 hover:text-white hover:border bg-black text-white font-bold rounded-md hover:bg-gray-800"
             >
               Send
             </button>

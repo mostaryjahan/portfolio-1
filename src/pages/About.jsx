@@ -16,8 +16,8 @@ const About = () => {
           </p>
         </div>
 
-        <div className="flex">
-          <div className="text-center md:text-left py-6 px-6 border-2 md:py-10 md:px-20 rounded-md">
+        <div className="flex ">
+          <div className="text-center md:text-left py-6 px-6 border-2 md:py-10 md:px-20 rounded-md w-full">
             <MdSupervisedUserCircle className="text-3xl mx-auto md:mx-0" />
             <h2 className="md:text-3xl text-2xl font-bold">Education</h2>
             <p className=" md:text-lg">

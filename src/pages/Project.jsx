@@ -27,9 +27,9 @@ const Project = () => {
             <p className="font-mon mt-2"><span className="font-semibold">Features:</span> User Authentication, Payment Integration, Data Management</p>
             <p className="font-mon mt-2 mb-2"><span className="font-semibold">Technology: </span>Tanstack query ,Axios, React,React-router-dom, MongoDB, Jwt, Firebase, Node.js</p>
             <div className=" card-actions md:flex justify-center">
-             <a href="https://github.com/mostaryjahan/medi-client-a12" className="p-2 rounded-3xl dark:text-white bg-black text-white">Client Site</a>
-             <a href="https://github.com/mostaryjahan/medi-server-a12" className="p-2 bg-black text-white rounded-3xl dark:text-white">Server Site</a>
-             <a href="https://medi-corner-22.web.app" className="p-2 bg-black text-white rounded-3xl dark:text-white">Live Site</a>
+             <a href="https://github.com/mostaryjahan/medi-client-a12" className="p-2 rounded-3xl dark:text-white bg-black text-white text-xs">Client Code</a>
+             <a href="https://github.com/mostaryjahan/medi-server-a12" className="p-2 bg-black text-white rounded-3xl dark:text-white text-xs">Server Code</a>
+             <a href="https://medi-corner-22.web.app" className="p-2 bg-black text-white rounded-3xl dark:text-white text-xs">Live Site</a>
             </div>
           </div>
         </div>
@@ -51,9 +51,9 @@ const Project = () => {
             <p className="font-mon mt-2"><span className="font-semibold">Features:</span> User Authentication, Assignment Creation, Assignment Management</p>
             <p className="font-mon mt-2 mb-2"><span className="font-semibold">Technology: </span>Axios, React,React-router-dom, MongoDB, Jwt, Firebase, Node.js</p>
             <div className="card-actions md:flex justify-center">
-             <a href="https://github.com/mostaryjahan/group-study-client-a11" className="p-2 rounded-3xl dark:text-white bg-black text-white">Client Site</a>
-             <a href="https://github.com/mostaryjahan/group-study-server-a11" className="p-2 bg-black text-white rounded-3xl dark:text-white">Server Site</a>
-             <a href="https://group-study-a15f6.web.app/" className="p-2 bg-black text-white rounded-3xl dark:text-white">Live Site</a>
+             <a href="https://github.com/mostaryjahan/group-study-client-a11" className="p-2 rounded-3xl dark:text-white bg-black text-white text-xs">Client Code</a>
+             <a href="https://github.com/mostaryjahan/group-study-server-a11" className="p-2 bg-black  text-white rounded-3xl dark:text-white text-xs">Server Code</a>
+             <a href="https://group-study-a15f6.web.app/" className="p-2 bg-black text-white rounded-3xl dark:text-white text-xs">Live Site</a>
             </div>
           </div>
         </div>
@@ -68,9 +68,9 @@ const Project = () => {
             <p className="font-mon mt-2"><span className="font-semibold">Features:</span> User Authentication, Category Browsing, Responsive Design</p>
             <p className="mt-2 mb-2 font-mon"><span className="font-semibold ">Technology:</span> React-router-dom, MongoDB,  Firebase for environment variables, Node.js</p>
             <div className="card-actions  md:flex justify-center">
-             <a href="https://github.com/mostaryjahan/art-client-a10" className="p-2 rounded-3xl dark:text-white bg-black text-white">Client Site</a>
-             <a href="https://github.com/mostaryjahan/art-server-a10" className="p-2 bg-black text-white rounded-3xl dark:text-white">Server Site</a>
-             <a href="https://art-store-64ab6.web.app" className="p-2 bg-black text-white rounded-3xl dark:text-white">Live Site</a>
+             <a href="https://github.com/mostaryjahan/art-client-a10" className="p-2 rounded-3xl dark:text-white bg-black text-white text-xs">Client Code</a>
+             <a href="https://github.com/mostaryjahan/art-server-a10" className="p-2 bg-black text-white rounded-3xl dark:text-white text-xs">Server Code</a>
+             <a href="https://art-store-64ab6.web.app" className="p-2 bg-black text-white rounded-3xl dark:text-white text-xs">Live Site</a>
             </div>
           </div>
         </div>

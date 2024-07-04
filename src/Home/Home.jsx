@@ -2,7 +2,6 @@ import About from "../pages/About.jsx";
 import Banners from "../pages/Banners.jsx";
 import ContactCard from "../pages/ContactCard.jsx";
 import Experience from "../pages/Experience.jsx";
-import Footer from "../pages/Footer.jsx";
 import Project from "../pages/Project.jsx";
 
 const Home = () => {
@@ -14,7 +13,7 @@ const Home = () => {
             <Experience></Experience> 
             <Project></Project>                
             <ContactCard></ContactCard>
-            <Footer></Footer>
+           
            
         </div>
     );

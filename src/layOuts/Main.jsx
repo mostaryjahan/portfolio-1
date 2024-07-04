@@ -1,6 +1,7 @@
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import Nav from "../pages/Nav";
 import { useEffect } from "react";
+import Footer from "../pages/Footer";
 
 const Main = () => {
     const location = useLocation();
@@ -22,9 +23,15 @@ const Main = () => {
   }, [location]);
 
     return (
-        <div className="mx-auto max-w-7xl">
+        <div >
+            <div className="mx-auto max-w-7xl">
             <Nav></Nav>
             <Outlet></Outlet>
+            </div>
+            <div>
+                <Footer></Footer>
+            </div>
+           
         </div>
     );
 };

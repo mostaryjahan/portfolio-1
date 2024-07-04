@@ -1,11 +1,31 @@
 import { CgMail } from "react-icons/cg";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+
+  const navigate = useNavigate();
+
+  const smoothScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+
+  const handleNavClick = (id) => {
+    navigate(`#${id}`);
+    smoothScroll(id); 
+  };
+
+
   return (
-    <footer className="footer bg-neutral text-neutral-content items-center  p-4 h-[180px]">
+    <footer className="bg-neutral text-neutral-content items-center  p-4 h-[180px]">
   
-    <nav className="grid-flow-col gap-4 sm:place-self-center md:justify-self-end">
+
+  
+    <nav className="flex gap-4 justify-center  mt-8 mx-auto">
       <a  href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#sent?compose=new">
       <CgMail className="w-8 h-6" />
       </a>
@@ -17,11 +37,25 @@ const Footer = () => {
       </a>
     </nav>
 
-    <div>
-    <div className="grid-flow-col font-mon items-center">   
-    <p className="font-mon text-center">Copyright © ${new Date().getFullYear()} - All right reserved by Mostary Jahan</p>
-  </div>
+    <div className="flex justify-center items-center mt-4 font-mon gap-2">
+    
+        <a className="cursor-pointer" onClick={() => handleNavClick("about")}>About |</a>
+       
+     
+        <a className="cursor-pointer" onClick={() => handleNavClick("experience")}>Experience |</a>
+    
+      
+        <a className="cursor-pointer" onClick={() => handleNavClick("project")}>Project |</a>
+  
+        <a className="cursor-pointer" onClick={() => handleNavClick("contact")}>Contact</a>
+     
     </div>
+   
+
+    <div className="font-mon mt-4 sm:mt-8">   
+    <p className="font-mon text-center sm:text-md text-xs">Copyright © ${new Date().getFullYear()} - All right reserved by Mostary Jahan</p>
+  </div>
+ 
 
   </footer>
   );

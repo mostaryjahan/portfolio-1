@@ -1,33 +1,49 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 
 const Nav = () => {
 
-    
+  const navigate = useNavigate();
+
+  const smoothScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+
+  const handleNavClick = (id) => {
+    navigate(`#${id}`);
+    smoothScroll(id); 
+  };
+
+   
   const navLinks = (
     <>
-      <li className="font-semibold ">
-        <a href="about">About</a>
+    
+      <li className="font-medium text-lg font-mon ">
+        <a onClick={() => handleNavClick("about")}>About</a>
       </li>
-      <li className="font-semibold ">
-        <Link to="/experience">Experience</Link>
+      <li className="font-medium text-lg font-mon ">
+        <a onClick={() => handleNavClick("experience")}>Experience</a>
       </li>
-      <li className="font-semibold">
-        <Link to="/project">Project</Link>
+      <li className="font-medium text-lg font-mon ">
+        <a onClick={() => handleNavClick("project")}>Project</a>
       </li>
-      <li className="font-semibold">
-        <Link to="/contact">Contact</Link>
+      <li className="font-medium text-lg font-mon ">
+        <a onClick={() => handleNavClick("contact")}>Contact</a>
       </li>
-
-
 
     </>
   );
 
 
 
+
     return (
         <div>
-            <div className="navbar bg-base-100">
+            <div id="nav" className="navbar bg-base-100">
   <div className="navbar-start">
     <div className="dropdown ">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

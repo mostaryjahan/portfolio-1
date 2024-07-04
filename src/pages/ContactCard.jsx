@@ -49,7 +49,7 @@ const ContactCard = () => {
   };
 
   return (
-    <div className=''> 
+    <div id='contact' className=''> 
       <div className="flex justify-center items-center   dark:text-gray-200 w-full mb-4">
         <div className="font-mon p-4 rounded-md shadow-md w-full sm:w-3/4 border-2 ">
           <h2 className="text-2xl font-mon font-bold mb-4 text-center">Get In Touch</h2>

@@ -1,4 +1,3 @@
-
 import main from "../assets/main.png";
 
 
@@ -7,7 +6,7 @@ import { MdOutlineFileDownload } from "react-icons/md";
 const Banners = () => {
   return (
 
-    <div className="hero  md:h-[500px] ">
+    <div id="banner" className="hero  md:h-[500px] ">
       <div className="hero-content flex-col lg:flex-row-reverse">
        <div className="">
        <img src={main} className="object-cover border-dashed border-gray-200 p-4 border-2 rounded-full sm:ml-4 mt-6 sm:w-[350px] sm:h-[360px]"/>
@@ -22,9 +21,9 @@ const Banners = () => {
           <p className="md:text-2xl text-gray-600 dark:text-white   font-mon">Frontend Web Developer</p>
 
           <div>
-            <button className="btn bg-black dark:bg-white text-white hover dark:text-black rounded-3xl">
+            <a href="#contact" className="btn bg-black dark:bg-white text-white hover dark:text-black rounded-3xl">
               Contact Info
-            </button>
+            </a>
             <a
                href="https://drive.google.com/file/d/1vUz4nA2GpE8GMAuGTS0K97pIrkbNl3EW/view?usp=sharing"
                target="_blank"
@@ -34,6 +33,7 @@ const Banners = () => {
               Download CV <MdOutlineFileDownload className="h-8 w-4" />
             </a>
           </div>
+         
         </div>
       </div>
     </div>

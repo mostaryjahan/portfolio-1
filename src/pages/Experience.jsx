@@ -1,46 +1,40 @@
-import { FaCheckCircle } from 'react-icons/fa';
 
 
 const Experience = () => {
-
-const skills = [
-    { category: 'Frontend Development', skills: [
-      { name: 'HTML' },
-      { name: 'CSS' },
-      { name: 'Tailwind' },
-      { name: 'JavaScript' },
-      { name: 'React' },
-    ]},
-    { category: 'Backend Development', skills: [
-      { name: 'MongoDB' },
-      { name: 'Node JS' },
-      { name: 'Express JS' },
-      { name: 'Firebase Auth' },
-    ]}
+  const technologies = [
+    { name: 'Html', description: 'Programming Language', icon: '/public/html.png' },
+    { name: 'Tailwind', description: 'CSS Framework', icon: '/public/tailwind-css.svg' },
+    { name: 'Javascript', description: 'Programming Language', icon: '/public/js.png' },
+    { name: 'React', description: 'Frontend Library', icon: '/public/react.png' },
+    // { name: 'Next Js', description: 'React Framework', icon: 'path/to/nextjs-icon' },
+    { name: 'Firebase', description: 'Backend as a service', icon: '/public/firebase.png' },
+    { name: 'Node js', description: 'Javascript Runtime', icon: '/public/nodejs.png' },
+    { name: 'MongoDB', description: 'NoSQL Database', icon: '/public/mongodb-original-wordmark.svg' },
+    { name: 'Git', description: 'Version Controller', icon: '/public/git2.png' },
+    { name: 'Vs Code', description: 'Code Editor', icon: '/public/vs-code.svg' },
   ];
-  
-    return (
-     
-        <section className="my-10 dark:text-gray-200 font-mon lg:mb-0  px-2">
-          <p className="text-center font-mon text-gray-600 text-xl dark:text-white">Explore my</p>
-          <h1 className="text-center font-mon font-bold md:text-4xl text-3xl dark:text-white">Experience</h1>
-          <div className="flex flex-col md:flex-row justify-center mt-8 space-y-8 md:space-y-0 md:space-x-12">
-        {skills.map((skillSet, index) => (
-          <div key={index} className="border rounded-lg p-6 shadow-lg w-full md:w-80">
-            <h3 className="text-xl font-semibold text-center mb-4">{skillSet.category}</h3>
-            {skillSet.skills.map((skill, idx) => (
-              <div key={idx} className="flex items-center  space-x-2 mb-4 md:pl-0 pl-16">
-                <FaCheckCircle className="" />
-                <p className="font-bold ">{skill.name}</p>
-              </div>
-            ))}
+
+  return (
+    <div id="experience" className=" dark:text-gray-800 py-10 mb-6 font-mon">
+      {/* <p className="text-center font-mon text-gray-600 md:text-xl dark:text-white">
+        Some of my
+      </p> */}
+      <h1 className="text-center font-mon font-bold text-3xl md:text-5xl dark:text-white">
+      Tech Stack
+      </h1>
+      <div className="max-w-6xl p-2 mx-auto mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        {technologies.map((tech) => (
+          <div key={tech.name} className="flex items-center p-4 bg-white shadow rounded-lg border border-gray-200">
+            <img src={tech.icon} alt={tech.name} className="w-12 h-12 mr-4"/>
+            <div>
+              <h3 className="text-xl font-semibold">{tech.name}</h3>
+              <p className="text-gray-600">{tech.description}</p>
+            </div>
           </div>
         ))}
       </div>
-      </section>
-
-      
-    );
+    </div>
+  );
 };
 
 export default Experience;

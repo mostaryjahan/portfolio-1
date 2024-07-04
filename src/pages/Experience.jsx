@@ -1,17 +1,24 @@
-
+import html from "../assets/html.png"
+import tailwindIcon from "../assets/tailwind-css.svg";
+import jsIcon from "../assets/js.png";
+import reactIcon from "../assets/react.png";
+import firebaseIcon from "../assets/firebase.png";
+import nodejsIcon from "../assets/nodejs.png";
+import mongodbIcon from "../assets/mongodb-original-wordmark.svg";
+import gitIcon from "../assets/git2.png";
+import vsCodeIcon from "../assets/vs-code.svg";
 
 const Experience = () => {
   const technologies = [
-    { name: 'Html', description: 'Programming Language', icon: '/public/html.png' },
-    { name: 'Tailwind', description: 'CSS Framework', icon: '/public/tailwind-css.svg' },
-    { name: 'Javascript', description: 'Programming Language', icon: '/public/js.png' },
-    { name: 'React', description: 'Frontend Library', icon: '/public/react.png' },
-    // { name: 'Next Js', description: 'React Framework', icon: 'path/to/nextjs-icon' },
-    { name: 'Firebase', description: 'Backend as a service', icon: '/public/firebase.png' },
-    { name: 'Node js', description: 'Javascript Runtime', icon: '/public/nodejs.png' },
-    { name: 'MongoDB', description: 'NoSQL Database', icon: '/public/mongodb-original-wordmark.svg' },
-    { name: 'Git', description: 'Version Controller', icon: '/public/git2.png' },
-    { name: 'Vs Code', description: 'Code Editor', icon: '/public/vs-code.svg' },
+    { name: 'Html', description: 'Programming Language', icon: html },
+  { name: 'Tailwind', description: 'CSS Framework', icon: tailwindIcon },
+  { name: 'Javascript', description: 'Programming Language', icon: jsIcon },
+  { name: 'React', description: 'Frontend Library', icon: reactIcon },
+  { name: 'Firebase', description: 'Backend as a service', icon: firebaseIcon },
+  { name: 'Node js', description: 'Javascript Runtime', icon: nodejsIcon },
+  { name: 'MongoDB', description: 'NoSQL Database', icon: mongodbIcon },
+  { name: 'Git', description: 'Version Controller', icon: gitIcon },
+  { name: 'Vs Code', description: 'Code Editor', icon: vsCodeIcon },
   ];
 
   return (
@@ -19,8 +26,8 @@ const Experience = () => {
       {/* <p className="text-center font-mon text-gray-600 md:text-xl dark:text-white">
         Some of my
       </p> */}
-      <h1 className="text-center font-mon font-bold text-3xl md:text-5xl dark:text-white">
-      Tech Stack
+      <h1 className="text-center font-mon font-bold text-3xl md:text-4xl dark:text-white">
+      Technology I know
       </h1>
       <div className="max-w-6xl p-2 mx-auto mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {technologies.map((tech) => (

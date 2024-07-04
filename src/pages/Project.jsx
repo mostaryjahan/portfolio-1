@@ -11,7 +11,7 @@ const Project = () => {
       <p className="text-center font-mon text-gray-600 md:text-xl dark:text-white">
         Some of my
       </p>
-      <h1 className="text-center font-mon font-bold text-3xl md:text-5xl dark:text-white">
+      <h1 className="text-center font-mon font-bold text-3xl md:text-4xl dark:text-white">
         Projects
       </h1>
 

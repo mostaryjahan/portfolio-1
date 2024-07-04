@@ -1,5 +1,5 @@
 import { CgMail } from "react-icons/cg";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
@@ -34,6 +34,9 @@ const Footer = () => {
       </a>
       <a href="https://github.com/mostaryjahan">
          <FaGithub className="w-8 h-6"/>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=61551521424123">
+         <FaFacebook className="w-8 h-6"/>
       </a>
     </nav>
 

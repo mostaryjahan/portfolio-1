@@ -31,7 +31,7 @@ const Footer = () => {
       <a  href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#sent?compose=new">
       <CgMail className="w-8 h-6 hover:border-2" />
       </a>
-      <a href="https://www.linkedin.com/in/your-name/">
+      <a href="https://www.linkedin.com/in/mostaryjahan/">
         <FaLinkedin className="w-8 h-6 hover:border-2"/>
       </a>
       <a href="https://github.com/mostaryjahan">
